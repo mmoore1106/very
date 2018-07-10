@@ -1,0 +1,72 @@
+/**
+ * Banner Base SCSS
+ */
+.banner {
+  width: 100%;
+  background-color: $gray-400;
+  position: relative;
+  margin-bottom: 2.5rem;
+  .wrapper {
+    display: block;
+    .description {
+      padding: 2.5rem 0;
+      .top-icon {
+        max-width: 88px;
+        display: block;
+        height: auto;
+        margin-bottom: 0.938rem;
+      }
+      h1 {
+        line-height: 1.2;
+        @include make-static-border-bottom();
+        max-width: 500px;
+      }
+      p {
+        max-width: 376px;
+      }
+    }
+    .featured-image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      .description {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+      }
+      .featured-image {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        justify-content: flex-end;
+        text-align: right;
+      }
+    }
+    @media screen and (min-width: $screen-xl) {
+      .description {
+        padding-left: 4rem;
+      }
+    }
+  }
+  .divider {
+    background-image: url(https://www.verypossible.com/hubfs/2018-very-redesign/trianglebg-white.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -0.125rem;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 60;
+    height: 160px;
+    @media (min-width: $screen-xxl-max) {
+      background-size: auto;
+    }
+  }
+}
+

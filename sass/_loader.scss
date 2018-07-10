@@ -1,0 +1,12 @@
+/**
+ * Loader Base SCSS
+ */
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://www.verypossible.com/hubfs/2018-very-redesign/loader.gif) center no-repeat #fff;
+}

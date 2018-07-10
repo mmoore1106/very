@@ -1,0 +1,66 @@
+/* Header Base */
+header {
+  @include make-container();
+  @include make-container-max-widths();
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  .logo {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    img {
+      max-width: 4.313em;
+      padding: 2em 0;
+      @media screen and (max-width: $screen-md) {
+        padding: 0.75em 0;
+      }
+    }
+  }
+  nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    a {
+      @include make-border-bottom();
+    }
+    &.cta {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      justify-content: flex-end;
+      a {
+        font-size: 14px;
+        padding: 0.125rem 1.5rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 500;
+        border: 0.125rem solid $black;
+        text-decoration: none;
+        margin: 1.875rem 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: $screen-lg) {
+      li {
+        a {
+          margin: 2.125em 1em;
+        }
+      }
+    }
+    @media screen and (max-width: $screen-md) {
+      display: none;
+    }
+  }
+}

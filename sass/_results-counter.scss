@@ -1,0 +1,32 @@
+/**
+ * Results Counter SCSS
+ */
+.results-counter {
+  @include make-content-container();
+  h2 {
+    font-size: 62px;
+    line-height: 89px;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 3px solid $black;
+    margin-right: $gutter-width;
+    padding-right: $gutter-width;
+    margin-bottom: 0;
+    .counter-value {
+      font-size: 62px;
+      line-height: 89px;
+      min-width: 120px;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font-family-brand;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.875rem;
+    max-width: 500px;
+  }
+}

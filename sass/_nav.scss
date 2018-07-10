@@ -1,0 +1,27 @@
+/** Base NAVs
+ *
+ * Kickstart any navigation component with a set of style resets. Works with
+ * `<nav>`s or `<ul>`s.
+ */
+nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+  }
+  li {
+    position: relative;
+    a {
+      color: $secondary;
+      font-size: 0.875em;
+      margin: 2.125em 1.750em;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 2em;
+      text-align: center;
+    }
+  }
+}

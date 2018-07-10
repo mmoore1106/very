@@ -1,0 +1,41 @@
+/**
+ * Featured Images SCSS
+ */
+.featured-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &.container {
+    @include make-content-container();
+  }
+  .item {
+    width: 100%;
+    margin-bottom: 1.875rem;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: $screen-sm) {
+    &.container {
+      .item {
+        width: 47%;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-md) {
+    &.container {
+      .item {
+        width: 31.5%;
+      }
+    }
+    &.full-width {
+      .item {
+        width: 32%;
+      }
+    }
+  }
+}

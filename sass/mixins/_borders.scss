@@ -1,0 +1,45 @@
+// Borders mixin
+@mixin make-border-bottom() {
+  display: block;
+  &:after {
+    content: '';
+    background: $black;
+    height: 0;
+    width: 100%;
+    max-width: 5.063rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.313rem;
+    right: 0;
+    margin: auto;
+    display: block;
+    transition: all .2s cubic-bezier(.39,.575,.565,1);
+    -webkit-transition: all .2s cubic-bezier(.39,.575,.565,1);
+    -moz-transition: all .2s cubic-bezier(.39,.575,.565,1);
+  }
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
+  &:hover:after {
+    height: 0.25rem;
+  }
+}
+
+@mixin make-static-border-bottom() {
+  position: relative;
+  margin-bottom: 2.5rem;
+  &:after {
+    height: 0.125rem;
+    content: "";
+    background: #000;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: -1.438rem;
+    display: block;
+    transition: all .2s cubic-bezier(0.39,0.575,0.565,1);
+    -webkit-transition: all .2s cubic-bezier(0.39,0.575,0.565,1);
+    -moz-transition: all .2s cubic-bezier(0.39,0.575,0.565,1);
+  }
+}

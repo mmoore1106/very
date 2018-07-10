@@ -1,0 +1,38 @@
+/**
+ * Lists Base
+ */
+.list-unstyled {
+  margin: 0 0 0.625rem;
+  padding: 0;
+  list-style: none;
+  display: block;
+  align-items: initial;
+  li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    a {
+      color: #888;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      margin: initial;
+      text-transform: initial;
+      text-align: initial;
+      display: initial;
+      &:hover {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  > li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: $list-inline-padding;
+    }
+  }
+}

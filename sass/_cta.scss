@@ -1,0 +1,25 @@
+/**
+ * CTA Sections SCSS
+ */
+.cta-section {
+  padding: 6.25rem 1.25rem;
+  background: url(https://www.verypossible.com/hubfs/2018-very-redesign/bg-black-pattern.png) no-repeat center center;
+  background-size: cover;
+  color: $white;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
+  .hs_cos_wrapper_type_form {
+    margin: auto;
+    display: block;
+    @media (min-width: $screen-lg){
+      max-width: 734px;
+    }
+  }
+  form {
+    fieldset, .hs_recaptcha, .hs_submit {
+      max-width: 100%;
+    }
+  }
+}

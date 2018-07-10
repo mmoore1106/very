@@ -1,0 +1,64 @@
+/**
+ * From Base SCSS
+ */
+form.hs-form {
+  display: block;
+  position: relative;
+  fieldset[class*="form-columns"] {
+    .hs-input {
+      width: 100%;
+    }
+  }
+  label  {
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 12px;
+    letter-spacing: 2px;
+    .hs-form-required {
+      display: none;
+    }
+  }
+  input {
+    line-height: 24px;
+    padding: 7px 10px;
+    font-size: 15px;
+    background: #F7F7F7;
+    box-shadow: none;
+    border: 1px solid #e2e2e2;
+  }
+  textarea {
+    line-height: 24px;
+    padding: 7px 10px;
+    font-size: 15px;
+    background: #F7F7F7;
+    box-shadow: none;
+    border: 1px solid #e2e2e2;
+    min-height: 110px;
+  }
+  input[type=submit] {
+    color: $white;
+    background-color: $black;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid $white;
+    white-space: nowrap;
+    padding: 12px 22px;
+    line-height: 1.428571429;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: auto;
+    max-width: 500px;
+    margin: 30px auto;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+// Hover mixin
+//
+// This mixin was designed to prevent `:hover` stickiness on iOS-an issue where hover
+// styles would persist after initial touch. Always return their regular psuedo-classes
+// instead of a shimmed media query.
+
+@mixin hover {
+  &:hover { @content; }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
